@@ -1,0 +1,10 @@
+%html
+  %head
+    %title= "GRiki listing: /" 
+
+  %body
+    %ul
+    -@current_tree.each do |blob_or_tree|
+      %li 
+        %a{:title => blob_or_tree.name.to_s, :href => "/"+blob_or_tree.id}
+          =blob_or_tree.name.to_s

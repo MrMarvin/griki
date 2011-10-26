@@ -1,0 +1,7 @@
+%html
+  %head
+    %title= "GRiki show: #{@blob.name} - #{@blob.id}" 
+
+  %body
+    :markdown
+      #{@blob.data}
